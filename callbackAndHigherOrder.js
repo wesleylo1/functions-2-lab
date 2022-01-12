@@ -124,6 +124,17 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
+function uniq(array, callback) {
+  for (i = 0; i < array.length; i++) {
+    for (j = i + 1; j <array.length; j++) {
+      if (array[i] === array[j]) {
+        array.splice(j,1)
+      }
+    }
+  }
+  callback(array)
+}
+
 
 /*
   Invoke the uniq function, passing in the names array from above and a callback function.
@@ -133,7 +144,7 @@ contains(names, 'Colt', result => {
 */
 
 // CODE HERE
-
+uniq(names,uniqArr => console.log(`The new names array with all the duplicate items removed is ${uniqArr}`))
 
 
 ////////// PROBLEM 6 //////////

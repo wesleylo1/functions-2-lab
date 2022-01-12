@@ -18,15 +18,15 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 // CODE HERE - declaration
-const evenNumbers = mixedNumbers.filter(function(element) {
-  return element % 2 === 0
-})
-console.log(evenNumbers)
+// const evenNumbers = mixedNumbers.filter(function(element) {
+//   return element % 2 === 0
+// })
+// console.log(evenNumbers)
 
 // CODE HERE - arrow
-const evenNumbers = mixedNumbers.filter(number => number % 2 === 0)
+// const evenNumbers = mixedNumbers.filter(number => number % 2 === 0)
 
-console.log(evenNumbers)
+// console.log(evenNumbers)
 
 ////////// PROBLEM 2 //////////
 
@@ -45,8 +45,8 @@ const prices = [15.00, 23.00, 78.00, 34.00, 12.00, 86.00, 12.00, 79.00, 32.00];
 */
 
 // CODE HERE
-// const postTaxPrices = prices.map(num => num * 1.07 );
-
+const postTaxPrices = prices.map(num => num * 1.07 );
+console.log(postTaxPrices);
 
 
 ////////// PROBLEM 3 //////////

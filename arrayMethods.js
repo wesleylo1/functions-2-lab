@@ -64,22 +64,20 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 
 // CODE HERE
 const totalPopulation  = populations.reduce((a,c) => a + c)
-console.log(totalPopulation);
-
 
 
 ////////// PROBLEM 4 //////////
 
 // Do not edit the code below.
-// const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulbabunny","CP":135},
-// {"monster":"Bulbabunny","CP":250},{"monster":"Ponylopse","CP":277},{"monster":"Ponylopse","CP":184},
-// {"monster":"Pikadoughnet","CP":207},{"monster":"Bulbabunny","CP":139},{"monster":"Pikadoughnet","CP":47},
-// {"monster":"Pikadoughnet","CP":175},{"monster":"WaterHorsia","CP":26},{"monster":"Ponylopse","CP":19},
-// {"monster":"Pikadoughnet","CP":218},{"monster":"Charaflier","CP":101},{"monster":"WaterHorsia","CP":96},
-// {"monster":"Pikadoughnet","CP":253},{"monster":"Sandmush","CP":146},{"monster":"Bulbabunny","CP":247},
-// {"monster":"Charaflier","CP":55},{"monster":"Bulbabunny","CP":72},{"monster":"Pikadoughnet","CP":300},
-// {"monster":"Sandmush","CP":262},{"monster":"Sandmush","CP":25},{"monster":"Charaflier","CP":215},
-// {"monster":"Ponylopse","CP":125},{"monster":"Bulbabunny","CP":178}];
+const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulbabunny","CP":135},
+{"monster":"Bulbabunny","CP":250},{"monster":"Ponylopse","CP":277},{"monster":"Ponylopse","CP":184},
+{"monster":"Pikadoughnet","CP":207},{"monster":"Bulbabunny","CP":139},{"monster":"Pikadoughnet","CP":47},
+{"monster":"Pikadoughnet","CP":175},{"monster":"WaterHorsia","CP":26},{"monster":"Ponylopse","CP":19},
+{"monster":"Pikadoughnet","CP":218},{"monster":"Charaflier","CP":101},{"monster":"WaterHorsia","CP":96},
+{"monster":"Pikadoughnet","CP":253},{"monster":"Sandmush","CP":146},{"monster":"Bulbabunny","CP":247},
+{"monster":"Charaflier","CP":55},{"monster":"Bulbabunny","CP":72},{"monster":"Pikadoughnet","CP":300},
+{"monster":"Sandmush","CP":262},{"monster":"Sandmush","CP":25},{"monster":"Charaflier","CP":215},
+{"monster":"Ponylopse","CP":125},{"monster":"Bulbabunny","CP":178}];
 // Do not edit the code above.
 
 /*
@@ -89,7 +87,8 @@ console.log(totalPopulation);
 */
 
 // CODE HERE
-//const myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+const myStrongest = monstersInYourPocket.filter(monster => monster.CP > 200 )
+console.log(myStrongest)
 
 
 

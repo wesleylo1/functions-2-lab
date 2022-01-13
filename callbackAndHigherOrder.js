@@ -157,7 +157,13 @@ uniq(names,uniqArr => console.log(`The new names array with all the duplicate it
 
 // CODE HERE 
 
-const each = (arr, cb) => arr.forEach((el, i) => cb(el, i)) // still trying to figure this one out
+function each(arr, cb) {
+  arr.forEach(function(el, i){
+    return cb(el, i)
+  });
+}
+
+ // const each = (arr, cb) => arr.forEach((el, i) => cb(el, i)) // still trying to figure this one out
 
 /*
   Invoke the each function, passing in the names array and a callback function.
@@ -172,7 +178,7 @@ each(names,(item,index) => console.log(`The item at index ${index} is ${item}`))
 ////////// PROBLEM 7 //////////
 
 /*
-  Write a function called getUserById that takes in three parameters: an array of objects (users), an id and a callback, and searches for the user with a matching id.
+  Write a function called getUserById that takes in three parameters: an array of objects (users), an id, and a callback, and searches for the user with a matching id.
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 

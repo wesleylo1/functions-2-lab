@@ -206,6 +206,13 @@ var users = [
 // Do not edit the code above.
 
 // CODE HERE 
+function getUserById(arr,id,callback) {
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i].id === id) {
+      return callback(arr[i])
+    }
+  }
+}
 
 
 // UNCOMMENT THE FUNCTION CALL BELOW
